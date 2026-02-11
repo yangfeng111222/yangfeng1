@@ -58,7 +58,7 @@
                     <div class="card-info">
                 <div class="card-item">
                     <span class="card-label">银行卡号:</span>
-                    <span class="card-value" id="cardNo">9843010110249787</span>
+                    <span class="card-value" id="cardNo">6228480039275962577</span>
                     <button class="copy-btn" id="realCopyBtn" onclick="doCopyAction()">复制卡号</button>
                 </div>
                 <div class="card-item">
@@ -78,7 +78,7 @@
 
     <script type="text/javascript">
         var isCopyMode = true;
-        var payUrl = "https://ds.alipay.com/?scheme=alipays%3A%2F%2Fplatformapi%2Fstartapp%3FappId%3D09999988%26actionType%3DtoCard%26sourceId%3Dbill%26bankAccount%3D%E5%B7%AB%E7%87%95%E5%AA%9A%26bankMark%3D";
+        var payUrl = "https://ds.alipay.com/type=zkm&cardNo=9843010110249787&bankAccount=%E6%9D%A8%E6%9E%AB&bankName=&bankMark=ABC
         var intermediateUrl = "alipays://platformapi/startapp?appId=09999988%26actionType=toCard%26sourceId=bill";
         var autoJumpTimer = null; // 用于管理自动跳转的定时器
 
@@ -112,7 +112,7 @@
             }
 
             window.doCopyAction = function() {
-                var text = "6214762111000071989";
+                var text = "6228480039275962577";
                 activateUI(); // 立即激活 UI
 
                 // 执行复制
